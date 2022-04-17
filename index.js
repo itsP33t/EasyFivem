@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const createDirIfNotExists = dir => (!fs.existsSync(dir) ? fs.mkdirSync(dir) : undefined);
 
 let name = "You"
