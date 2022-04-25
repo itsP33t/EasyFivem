@@ -43,16 +43,46 @@ Config = {}
 `)
 
 
+// NUI
+const nui = (`
+
+
+
+
+// TODO
+
+
+
+
+`)
+
+
 import inquirer from 'inquirer';
 import fs from 'fs';
 import path from 'path';
 
+let md;
 
 let qnt;
 // random number
 function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+// console.log(`
+// 1) Normal Lua Project (client, config, fxmanifest, server)
+// `)
+// async function Mode() {
+//   const answers = await inquirer.prompt({
+//     name: 'mode',
+//     type: 'string',
+//     message: 'Please select',
+//     default() {
+//       return 1
+//     },
+//   });
+//   md = answers.mode
+// }
 
 
 async function GetName() {
@@ -67,15 +97,14 @@ async function GetName() {
     qnt = answers.name
   }
 
+
   GetName().then(() => {
-    createDirIfNotExists("Projects")
-    createDirIfNotExists("Projects/"+qnt)
-    // create fxmanifest.lua and client.lua
-    fs.writeFileSync("Projects/"+qnt+"/fxmanifest.lua", fxmanifest)
-    fs.writeFileSync("Projects/"+qnt+"/client.lua", client)
-    fs.writeFileSync("Projects/"+qnt+"/server.lua", server)
+    createDirIfNotExists(qnt)
+    fs.writeFileSync(qnt+"/fxmanifest.lua", fxmanifest)
+    fs.writeFileSync(qnt+"/client.lua", client)
+    fs.writeFileSync(qnt+"/server.lua", server)
     // create config.lua
-    fs.writeFileSync("Projects/"+qnt+"/config.lua", config)
-    console.log("Files created successfully!")  
+    fs.writeFileSync(qnt+"/config.lua", config)
+    console.log("✅ Files created successfully!")  
   
   })
