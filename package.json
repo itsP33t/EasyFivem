@@ -1,20 +1,19 @@
 {
   "name": "easyfivem",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "type": "module",
   "description": "Simple tool that can create basic fivem scripts",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "fivem"
   ],
-
   "bin": {
     "easyfivem": "index.js"
-},
-
+  },
   "author": "P33t.net",
   "license": "ISC",
   "dependencies": {

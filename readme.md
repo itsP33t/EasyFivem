@@ -7,6 +7,6 @@
 ## Usage:
 `npx easyfivem`
 or
-`npm i eaasyfivem -g` and then `easyfivem`
+`npm i easyfivem -g` and then `easyfivem`
 
 It will create the folder with the project in the directory where you executed it
