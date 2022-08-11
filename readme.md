@@ -11,3 +11,8 @@ then just `npm i easyfivem -g`
 As of right now it supports:
 - Classic lua (fxmanifest, client, server, config)
 - Lua with NUI (fxmanifest, client, server, config, index.html, reset.css, index.js)
+
+TODO:
+- Add react NUI template
+- Add vue NUI template
+- Add more languages like javascript, typescript and C#
