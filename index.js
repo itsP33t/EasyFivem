@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-let version = '1.0.4'
+let version = '1.0.5'
 const createDirIfNotExists = dir => (!fs.existsSync(dir) ? fs.mkdirSync(dir) : undefined);
 let qnt;
 let md;

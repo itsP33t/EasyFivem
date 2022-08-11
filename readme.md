@@ -1,12 +1,13 @@
-#EasyFivem
-## Fivem Script maker
+# EasyFivem
+## a CLI for making your life easier. This tool will generate all the necessary files for you.
 
-## What does it do?
-### This tool will help you make fivem scripts, it will create config.lua, client.lua, server.lua and fxmanifest.lua for you but soon it will be supporting more languages
+**Installing**
+Make sure you have [node.js](https://nodejs.org/en/ "node.js") installed on your computer
+then just `npm i easyfivem -g`
 
-## Usage:
-`npx easyfivem`
-or
-`npm i easyfivem -g` and then `easyfivem`
+**Updating**
+`npm i easyfivem@latest -g`
 
-It will create the folder with the project in the directory where you executed it
+As of right now it supports:
+- Classic lua (fxmanifest, client, server, config)
+- Lua with NUI (fxmanifest, client, server, config, index.html, reset.css, index.js)
