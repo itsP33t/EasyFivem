@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-let version = '1.0.5'
+let version = '1.0.6'
 const createDirIfNotExists = dir => (!fs.existsSync(dir) ? fs.mkdirSync(dir) : undefined);
 let qnt;
 let md;
@@ -15,7 +15,7 @@ console.log(`
 ${chalk.gray('------------------------------------------------------')}  
 - ${chalk.green('Easy')}${chalk.red('Fivem')} 🐌 
 - Current version: ${chalk.yellow(version)}
-- ${chalk.red('[!]')} ${chalk.bold.white('Please note that this version isn\'t fully tested, but it should work!')}')}}       
+- ${chalk.red('[!]')} ${chalk.bold.white('Please note that this version isn\'t fully tested, but it should work!')}       
 ${chalk.gray('------------------------------------------------------')}
 ${chalk.blue('Select the template you want to use:')}
 `)
