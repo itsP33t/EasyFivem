@@ -24,4 +24,8 @@ jobs:
           prerelease: true
           title: "Build"
           files: |
-            *
+            node_modules
+            index.js
+            package-lock.json
+            package.json
+            readme.md
