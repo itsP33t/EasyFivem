@@ -29,3 +29,4 @@ jobs:
             package-lock.json
             package.json
             readme.md
+            addon/*
