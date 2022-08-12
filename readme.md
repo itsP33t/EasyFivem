@@ -11,12 +11,17 @@ then just `npm i easyfivem -g`
 As of right now it supports:
 - Classic lua (fxmanifest, client, server, config)
 - Lua with NUI (fxmanifest, client, server, config, index.html, reset.css, index.js)
+- any custom template
 
 TODO:
 - Add react NUI template
 - Add vue NUI template
 - Add more languages like javascript, typescript and C#
 - ~~Ability to add your own templates~~
+
+Known issues:
+- You will loose all your templates if you update using npm i easyfivem@latest -g
+- Experimental warning on start
 
 Links:
 - [cfx.re link](https://forum.cfx.re/t/easyfivem-fivem-project-generator-cli/4893791 "cfx.re link")
