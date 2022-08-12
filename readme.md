@@ -16,6 +16,7 @@ TODO:
 - Add react NUI template
 - Add vue NUI template
 - Add more languages like javascript, typescript and C#
+- Ability to add your own templates
 
 Links:
 - [cfx.re link](https://forum.cfx.re/t/easyfivem-fivem-project-generator-cli/4893791 "cfx.re link")
