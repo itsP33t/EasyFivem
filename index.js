@@ -47,7 +47,7 @@ async function GetName() {
 }
 
 // this will fetch all the templates
-let folders = fs.readdirSync(`${ScriptLocation}/addon`).filter(file => fs.statSync(path.join('./addon', file)).isDirectory());
+let folders = fs.readdirSync(`${ScriptLocation}/addon`).filter(file => fs.statSync(path.join(`${ScriptLocation}/addon`, file)).isDirectory());
 let foldersObject = {};
 folders.forEach(folder => {
     foldersObject[folder] = folder;
