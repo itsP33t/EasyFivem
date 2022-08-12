@@ -1,6 +1,6 @@
 {
   "name": "easyfivem",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "type": "module",
   "description": "Simple tool that can create basic fivem scripts",
   "main": "index.js",
