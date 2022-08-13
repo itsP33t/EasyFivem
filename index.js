@@ -7,7 +7,7 @@ import chalk from 'chalk';
 import updateNotifier from 'update-notifier';
 import cliSelect from 'cli-select'
 import inquirer from 'inquirer'
-
+import boxen from 'boxen';
 
 
 // variables
@@ -65,15 +65,10 @@ process.exit()
 GetOS() //.then(() => {
 // Start
 updateNotifier({pkg: packageJson}).notify();
-console.log(`
-${chalk.gray('------------------------------------------------------')}  
-- ${chalk.green('Easy')}${chalk.red('Fivem')} 🐌 
-- Current version: ${chalk.yellow(version)}
-- ${chalk.red('[!]')} ${chalk.bold.white('Please note that this version isn\'t fully tested, but it should work!')}       
-${chalk.green('Now you can import your own projects, just import the folder to')} ${chalk.gray(`${addonLoc}`)}
-${chalk.gray('------------------------------------------------------')}
-${chalk.blue('Select the template you want to use:')}
-`)
+console.log(boxen(`Current version: ${chalk.yellow(version)}
+${chalk.green('Now you can import your own projects, just import the folder to')} ${chalk.gray(`${addonLoc}`)}`, {title: `${chalk.green('Easy')}${chalk.red('Fivem')} 🐌`, titleAlignment: 'center', borderColor: 'blue', borderStyle: 'round'}))
+console.log(boxen(`${chalk.blue('Select the template you want to use. Use arrows to select and enter to confirm',)}`,{title: 'Select 🤔', titleAlignment: 'center', borderColor: 'green', borderStyle: 'round'}))
+
 
 // just a form that will get a project name
 async function GetName() {
@@ -124,4 +119,3 @@ fs.copy(src, dest, function (err) {
 });
 
 })})
-//})
