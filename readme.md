@@ -1,7 +1,7 @@
 # EasyFivem
 ## a CLI for making your life easier. This tool will generate all the necessary files for you.
 
-Note: The latest version is not working on Linux. Latest Linux compatible version is 1.0.6. Working hard on an update
+Note: The latest version needs more configuration on Linux, just follow the [wiki](https://github.com/itsP33t/EasyFivem/wiki/Fix-for-linux "wiki")
 
 **Installing**
 Make sure you have [node.js](https://nodejs.org/en/ "node.js") installed on your computer
